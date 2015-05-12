@@ -3,21 +3,10 @@
 newData <- data.frame(test=c(1,2,3), animal=c('dog', 'cat', 'antelope'))
 write.csv(newData, 'test.csv')
 
+#deleting some stuff
 
-Setup = function(){
-  
-# this code bombs the shinyapps.io deploy, so commenting out and relying on package prefixes to guide install zoo::, psych::
-#   extra.packages.required = c('zoo','psych') # zoo for MAR(), NP(); psych for geometric.mean
-#   
-#   # install packages if needed
-#   for (p in extra.packages.required){
-#     if (!suppressWarnings(library(p, character.only=T, logical.return=T))){
-#       cat(sprintf('\n\nInstalling %s...\n', p))
-#       install.packages(p)
-#       require(p, character.only=T)
-#     }
-#   }
-  
+
+
   # csv comparison function, made global
   csv_compare <<- function(o, step, prefix=sprintf('temp/%s_MAR', basename(getwd()))){
     
