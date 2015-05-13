@@ -49,6 +49,13 @@ Setup = function(){
   
 }
 
+
+#adding some new code #1 on github
+newData <- data.frame(test=c(1,2,3), animal=c('dog', 'cat', 'antelope'))
+
+write.csv(newData, 'test.csv')
+
+
  FIS = function(layers, status_year){
   # layers used: fis_meancatch, fis_b_bmsy, fis_proparea_saup2rgn
       
@@ -254,6 +261,12 @@ Setup = function(){
   scores = rbind(status, trend) %>% mutate(goal='FIS')
   return(scores)  
 }
+
+##
+#adding some new code on github #2
+newData <- data.frame(test=c(1,2,3), animal=c('dog', 'cat', 'antelope'))
+
+write.csv(newData, 'test.csv')
 
 MAR = function(layers, status_years){  
   # layers used: mar_harvest_tonnes, mar_harvest_species, mar_sustainability_score, mar_coastalpopn_inland25mi, mar_trend_years
