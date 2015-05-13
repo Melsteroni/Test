@@ -8,7 +8,7 @@ write.csv(newData, 'test.csv')
 # changing argument names
 
   # csv comparison function, made global
-  csv_compare <<- function(o, step, prefix2=sprintf('temp/%s_MAR', basename(getwd()))){
+  csv_compare <<- function(o, step, prefix=sprintf3('temp/%s_MAR', basename(getwd()))){
     
     dir_temp = basename(dirname(prefix))
     if (!file.exists(dir_temp)) dir.create(dir_temp, recursive=T)
@@ -42,6 +42,13 @@ write.csv(newData, 'test.csv')
   }
   
 }
+
+
+#adding some new code #1 on github
+newData <- data.frame(test=c(1,2,3), animal=c('dog', 'cat', 'antelope'))
+
+write.csv(newData, 'test.csv')
+
 
  FIS = function(layers, status_year){
   # layers used: fis_meancatch, fis_b_bmsy, fis_proparea_saup2rgn
@@ -248,6 +255,12 @@ write.csv(newData, 'test.csv')
   scores = rbind(status, trend) %>% mutate(goal='FIS')
   return(scores)  
 }
+
+##
+#adding some new code on github #2
+newData <- data.frame(test=c(1,2,3), animal=c('dog', 'cat', 'antelope'))
+
+write.csv(newData, 'test.csv')
 
 MAR = function(layers, status_years){  
   # layers used: mar_harvest_tonnes, mar_harvest_species, mar_sustainability_score, mar_coastalpopn_inland25mi, mar_trend_years
