@@ -31,6 +31,8 @@ Change C2
     }
     x = read.csv(csv, check.names=F)
     
+    
+Change C3    
     # custom modifications
     if (step=="1-rky"){x = x %>% arrange(rgn_id, species)}
     if (step=="2-rky-smooth"){x = x %>% arrange(rgn_id, species)}
