@@ -15,6 +15,9 @@ write.csv(newData, 'test.csv')
 
 # changing argument names
 
+
+Change C2
+
   # csv comparison function, made global
   csv_compare <<- function(o, step, prefix=sprintf3('temp/%s_MAR', basename(getwd()))){
     
