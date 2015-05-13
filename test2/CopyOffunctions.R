@@ -2,7 +2,7 @@
 # changing argument names
 
   # csv comparison function, made global
-  csv_compare <<- function(o, step, prefix=sprintf2('temp/%s_MAR', basename(getwd()))){
+  csv_compare <<- function(o, step, prefix=sprintf15('temp/%s_MAR', basename(getwd()))){
     
     dir_temp = basename(dirname(prefix))
     if (!file.exists(dir_temp)) dir.create(dir_temp, recursive=T)
