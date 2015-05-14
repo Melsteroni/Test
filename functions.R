@@ -24,6 +24,8 @@ Setup = function(){
     
     dir_temp = basename(dirname(prefix))
     if (!file.exists(dir_temp)) dir.create(dir_temp, recursive = TRUE)
+
+## Test 3    
     
     csv = sprintf('%s_%s_B.csv', prefix, step)
     if (!file.exists(csv)){
