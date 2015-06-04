@@ -17,7 +17,8 @@ Setup = function(){
   
   # csv comparison function, made global
 
-  csv_compare <<- function(o, step=3, prefix=sprintf('temp/%s_MAR', basename(getwd()))){
+  ## step is somehting else....
+  csv_compare <<- function(o, step, prefix=sprintf('temp/%s_MAR', basename(getwd()))){
     
     dir_temp = basename(dirname(prefix))
     if (!file.exists(dir_temp)) dir.create(dir_temp, recursive = TRUE)
