@@ -16,6 +16,7 @@ Setup = function(){
   Change 2
   
   # csv comparison function, made global
+
   csv_compare <<- function(o, step=3, prefix=sprintf('temp/%s_MAR', basename(getwd()))){
     
     dir_temp = basename(dirname(prefix))
